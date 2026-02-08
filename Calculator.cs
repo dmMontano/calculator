@@ -1,9 +1,13 @@
 // Calculator by Dannicah Montano
 
-     public static double? Calculate(int first, int second, string operation)
+    public static double? Calculate(int first, int second, string operation)
     {
-        switch (operation)
+        switch(operation)
         {
+            case "=":
+                Console.WriteLine("Program terminated.");
+                return null;
+                  
             case "+":
                 return first + second;
 
@@ -14,7 +18,7 @@
                 return first * second;
 
             case "/":
-                if (second == 0)
+                if(second == 0)
                 {
                     Console.WriteLine("Cannot divide by zero.");
                     return null;
@@ -22,16 +26,12 @@
                 return (double)first / second;
 
             case "%":
-                if (second == 0)
+                if(second == 0)
                 {
                     Console.WriteLine("Cannot modulo by zero.");
                     return null;
                 }
                 return first % second;
-
-            case "=":
-                Console.WriteLine("Program terminated.");
-                return null;
 
             default:
                 return null;
