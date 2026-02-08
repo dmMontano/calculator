@@ -7,7 +7,7 @@ public class Calculator
     public static void Main(string[] args)
     {
         string operation = "";
-        while (operation != "="){
+        while(operation != "="){
             Console.Write("\nEnter first number: ");
             int first = int.Parse(Console.ReadLine());
             Console.Write("Enter second number: ");
@@ -17,8 +17,8 @@ public class Calculator
             operation = Console.ReadLine();
             
             while(operation != "+" && operation != "-" && operation !="*"&& operation != "/" &&operation != "%" &&operation != "="){
-            Console.WriteLine("\nIncorrect operation used. Please try again.");
-            Console.Write("Choose an operation(+,-,*,/,%,=): ");
+            Console.WriteLine("\nIncorrect Operation Used, please try again.");
+            Console.Write("\nChoose an operation(+,-,*,/,%,=): ");
             operation = Console.ReadLine();
             }
          
@@ -28,4 +28,5 @@ public class Calculator
             }
         }
     }
+    
 }
