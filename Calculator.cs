@@ -1,9 +1,5 @@
 // Calculator by Dannicah Montano
 
-using System;
-
-public class Calculator
-{
      public static double? Calculate(int first, int second, string operation)
     {
         switch (operation)
@@ -41,4 +37,3 @@ public class Calculator
                 return null;
         }
     }
-}
